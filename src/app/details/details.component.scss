@@ -1,0 +1,84 @@
+:host{
+    height: 100%;
+    width: 50%;
+    top : 0;
+    position: sticky;
+}
+
+.container-1{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card{
+        height: 80%;
+        min-width: 60%;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        border: 1px solid white;
+        text-wrap: pretty;
+        width: 60%;
+        box-sizing: border-box;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // opacity: 0.9;
+        .aboutSection{
+            h1{
+                font-family: "Raleway Dots", sans-serif;
+                font-weight: 400;
+                font-size: 3.5rem;
+                text-wrap: wrap;
+            }
+            h2, h4{
+                font-family: "Raleway", sans-serif;
+                font-weight: 550;
+            }
+            
+        }
+        
+        ul{
+            list-style-type: none;
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            li{
+                font-family: "Raleway", sans-serif;
+                font-weight: 550;
+                a{
+                    text-decoration: none;
+                    :hover{
+                        font-size: 2rem;
+                    }
+                    span{
+                        color: white;
+                    }
+                }
+            }
+        }
+        .contact-me{
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            padding: 2rem;
+            font-size: 2em;
+
+            fa-icon{
+                color: #aa9c9c;
+                :hover{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    :host{
+        justify-content: center;
+    }
+    .card{
+        display: none;
+    }
+}
