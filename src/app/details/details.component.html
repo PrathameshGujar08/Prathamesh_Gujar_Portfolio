@@ -3,7 +3,6 @@
     <div class="aboutSection">
       <h1>{{ name }}</h1>
       <h2>{{ designation }}</h2>
-
       <h4>{{ tagLine }}</h4>
     </div>
 
@@ -16,15 +15,21 @@
             </a>
           </li>
           <li>
-            <a href="#experience">
-              <span></span>
-              <span>Experience</span>
-            </a>
-          </li>
-          <li>
             <a href="#education">
               <span></span>
               <span>Education</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills">
+              <span></span>
+              <span>Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="#experience">
+              <span></span>
+              <span>Experience</span>
             </a>
           </li>
           <li>
@@ -38,6 +43,14 @@
     </div>
 
     <div class="contact-me">
+      <div class="resume">
+        <a
+          href="https://drive.google.com/file/d/1Vmaha5bIGaY4iKOBngJsQwVjZZv7eCgK/view?usp=drive_link"
+          target="_blank"
+        >
+          <fa-icon [icon]="faFile"></fa-icon>
+        </a>
+      </div>
       <div class="github">
         <a href="https://github.com/PrathameshGujar08" target="_blank">
           <fa-icon [icon]="faGithub"></fa-icon>
@@ -54,7 +67,10 @@
         </a>
       </div>
       <div class="mail">
-        <a href="mailto:prathameshgujar2002@gmail.com">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=prathameshgujar2002@gmail.com&bcc=prathameshgujar@iitbhilai.ac.in"
+          target="_blank"
+        >
           <fa-icon [icon]="faEnvelope"></fa-icon>
         </a>
       </div>

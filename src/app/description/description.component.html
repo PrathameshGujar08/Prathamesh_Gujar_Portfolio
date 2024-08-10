@@ -1,7 +1,7 @@
 <div class="container-2">
   <div class="content">
     <div class="About">
-      <section id="#about">
+      <section id="about">
         <p>
           My passion for Computer Science ignited when I joined college.
           Interacting with brilliant individuals inspired me to learn and grow.
@@ -17,18 +17,21 @@
     <hr class="linebtwnSections" />
 
     <div class="Education">
-      <section id="#education">
+      <section id="education">
         <div class="heading">
           <h1>Education</h1>
         </div>
+
         <div class="educationHeaders">
           <div class="collegeNameHeading">
             <a href="https://www.iitbhilai.ac.in/" target="_blank">
               Indian Institute of Technology, Bhilai</a
             >
           </div>
+
           <div class="duration">2020 - 2024</div>
         </div>
+
         <div class="discipline">Computer Science and Engineering</div>
         <div class="cgpa">Cgpa : 8.27</div>
       </section>
@@ -36,8 +39,54 @@
 
     <hr class="linebtwnSections" />
 
+    <div class="Skills">
+      <section id="skills">
+        <div class="heading">
+          <h1>Skills</h1>
+        </div>
+        <div class="skills skills-1">
+          <div class="heading">
+            <h3>CourseWork</h3>
+          </div>
+          <ul class="skill-content">
+            <li>Data Structures and Algorithm</li>
+            <li>Computer System Design</li>
+            <li>Computer Network</li>
+            <li>Operating System</li>
+            <li>Object Oriented Programming</li>
+            <li>Database Management System</li>
+            <li>Cryptography</li>
+            <li>Information Technology</li>
+          </ul>
+        </div>
+        <div class="skills skills-2">
+          <div class="heading">
+            <h3>Language and Web Technologies</h3>
+          </div>
+          <ul class="skill-content">
+            <li>Angular</li>
+            <li>React</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>NodeJS</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>MongoDB</li>
+            <li>Docker</li>
+            <li>Git and GitHub</li>
+            <li>Linux and Shell Scripting</li>
+            <li>Cuda</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <hr class="linebtwnSections" />
+
     <div class="Experience">
-      <section id="#experience">
+      <section id="experience">
         <div class="heading">
           <h1>Experience</h1>
         </div>
@@ -74,11 +123,13 @@
 
         <hr class="linebtwnSimilarContent" />
 
+
+        
         <div class="exp2">
           <a href="https://www.cdac.in/index.aspx" target="_blank">
             <div class="experienceHeading">
               <div class="heading">
-                <h2>Software Developer Intern</h2>
+                <h2>SDE Intern</h2>
                 <h3>CDAC, Pune</h3>
               </div>
               <div class="duration">
@@ -102,82 +153,123 @@
     <hr class="linebtwnSections" />
 
     <div class="Projects">
-      <section id="#projects">
+      <section id="projects">
         <div class="heading">
           <h1>Projects</h1>
         </div>
 
-        <div class="projects project-1">
-          <div class="thumbnail">
+        <div class="project-detail">
+          <div class="projects project-1">
             <a href="https://campdelrasp.vercel.app/">
-              <img
-                src="CampDel/Campdel.jpg"
-                alt="Campdel-Image"
-                style="width: 100%; height: 50%"
-              />
+              <div class="thumbnail">
+                <img
+                  src="CampDel/Campdel.jpg"
+                  alt="Campdel-Image"
+                  style="width: 100%; height: 50%"
+                />
+                <a href="https://github.com/RASP-food-delivery" target="_blank">
+              <fa-icon [icon]="faGithubSquare"></fa-icon>
+            </a>
+              </div>
+
+              <div class="project-description">
+                <div class="heading">
+                  <h3>CampDel - Campus Food Delivery App</h3>
+                  <p>January 2024 - March 2024</p>
+                </div>
+                <div>
+                  Website made as Group Project for our course in collge name
+                  Computer System Design. The website functionalities include
+                  OTP User verifcation, Order History, Fast Search. The teck
+                  stack used was React, NodeJs, MongoDB, Docker.
+                </div>
+              </div>
             </a>
           </div>
-          <div class="project-description">
-            <a href="https://campdelrasp.vercel.app/">
-            <div class="heading">
-                <h3>CampDel - Campus Food Delivery Application</h3>
-                <p>January 2024 - March 2024</p>
+
+          <div class="skillUsed">
+            <div *ngFor="let skill of skillsP1" class="skillName">
+              {{ skill }}
             </div>
-              Website made as Group Project for our course in collge name
-              Commputer System Design. The website functionalities include OTP
-              User verifcation, Order History, Fast Search. The teck stack used
-              was React, NodeJs, MongoDB, Docker.
-            </a>
           </div>
         </div>
 
         <hr class="linebtwnSimilarContent" />
 
-        <div class="projects project-2">
-          <div class="thumbnail">
-            <img
-              src="DozyPanda/Login.png"
-              alt="DozyPanda-Image"
-              style="width: 100%; height: 50%"
-            />
-          </div>
-          <div class="project-description">
-            <div class="heading">
+        <div class="project-detail">
+          <div class="projects project-2">
+            <div class="thumbnail">
+              <img
+                src="DozyPanda/Login.png"
+                alt="DozyPanda-Image"
+                style="width: 100%; height: 50%"
+              />
+              <a href="https://github.com/PrathameshGujar08/Chat-App" target="_blank">
+              <fa-icon [icon]="faGithubSquare"></fa-icon>
+            </a>
+            </div>
+
+            <div class="project-description">
+              <div class="heading">
                 <h3>Dozy Panda - Chat App (Not Hosted)</h3>
                 <p>December 2024</p>
+              </div>
+              <div>
+                Made a chat App with React, NodeJS, Socket.IO, MongoDB. Features
+                include Login, SignUp, Chat Page. Two Way Communication is
+                enabled with Socket.Io.
+              </div>
             </div>
-            Made a chat App with React, NodeJS, Socket.IO, MongoDB. Features
-            include Login, SignUp, Chat Page. Two Way Communication is enabled
-            with Socket.Io.
+          </div>
+
+          <div class="skillUsed">
+            <div *ngFor="let skill of skillsP1" class="skillName">
+              {{ skill }}
+            </div>
           </div>
         </div>
 
         <hr class="linebtwnSimilarContent" />
 
-        <div class="projects project-3">
-          <div class="thumbnail">
-            <a href="https://campdelrasp.vercel.app/">
-              <img
-                src="AES Visualiser/AES.png"
-                alt="AES-Visualizer-Image"
-                style="width: 100%; height: 50%"
-              />
+        <div class="project-detail">
+          <div class="projects project-3">
+            <a href="https://hex-brains.onrender.com/">
+              <div class="thumbnail">
+                <img
+                  src="AES Visualiser/AES.png"
+                  alt="AES-Visualizer-Image"
+                  style="width: 100%; height: 50%"
+                />
+                <a href="https://github.com/PrathameshGujar08/Aes-Visualizer" target="_blank">
+              <fa-icon [icon]="faGithubSquare"></fa-icon>
+            </a>
+              </div>
+
+              <div class="project-description">
+                <div class="heading">
+                  <h3>AES Encrption Visualiser</h3>
+                  <p>October 2022 - November 2022</p>
+                </div>
+                <div>
+                  Course Project made to show Visualisation of How AES
+                  encryption works on a basic level by beautiful and engagin
+                  animations. Useful to learn the working of AES using Visualisation.
+                </div>
+              </div>
             </a>
           </div>
-          <div class="project-description">
-            <a href="https://hex-brains.onrender.com/">
-              <div class="heading">
-                <h3>AES Encrption Visualiser</h3>
-                <p>October 2022 - November 2022</p>
-              </div>
-              Course Project made to show Visualisation of How AES encryption
-              works on a basic level by beautiful and engagin animations.
-            </a>
+
+          <div class="skillUsed">
+            <div *ngFor="let skill of skillsP1" class="skillName">
+              {{ skill }}
+            </div>
           </div>
         </div>
       </section>
     </div>
 
-    <h2>More Coming Up....</h2>
+
+
+    <h2>More Coming Up Soon....</h2>
   </div>
 </div>

@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
-
+import {Component} from '@angular/core';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [CdkAccordionModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
-export class HeaderComponent {
 
+export class HeaderComponent {
+  name = "Prathamesh Gujar"
+  expandedIndex = 0;
 }

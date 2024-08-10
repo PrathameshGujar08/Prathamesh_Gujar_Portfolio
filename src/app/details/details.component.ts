@@ -7,6 +7,8 @@ import {
   faTwitter,
   faXTwitter
 } from '@fortawesome/free-brands-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons'
+
 
 @Component({
   selector: 'app-details',
@@ -24,6 +26,6 @@ export class DetailsComponent {
     faGithub = faGithub;
     faLinkedin = faLinkedin;
     faEnvelope = faEnvelope;
-    // faTwitter = faTwitter;
     faXTwitter = faXTwitter;
+    faFile = faFile;
 }

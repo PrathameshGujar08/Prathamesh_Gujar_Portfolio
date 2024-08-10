@@ -6,12 +6,9 @@
   width: 100%;
   display: flex;
   color: #e3e3e3;
-  .trial{
-    max-height: 100vh;
-  }
 }
 
-@media (max-width : 1024px){
+@media (max-width : 1180px){
   .container{
   margin: 0;
   padding: 0;
