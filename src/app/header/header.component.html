@@ -1,31 +1,53 @@
-<cdk-accordion class="example-accordion">
-    <cdk-accordion-item
+<div class="headerBar">
+  <div class="nameBar">
+    <div class="aboutMe" *ngIf="!showContactMe">
+      <div class="name">{{ name }}</div>
+    </div>
 
-      #accordionItem="cdkAccordionItem"
-      class="example-accordion-item"
-      role="button"
-      tabindex="0"
-      [attr.id]="'accordion-header-'"
-      [attr.aria-expanded]="accordionItem.expanded"
-      [attr.aria-controls]="'accordion-body-'">
-      <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
-        <h4>
-          {{ name }}
-        </h4>
-        <!-- <span class="example-accordion-item-description">
-          Click to {{ accordionItem.expanded ? 'close' : 'open' }}
-        </span> -->
+    <div class="dropDownBtn">
+      <img
+        *ngIf="!showContactMe"
+        (click)="toggleContactMe()"
+        src="Icons/arrow.png"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="contactMe" *ngIf="showContactMe">
+    <div class="oneLiner">{{ oneLiner }}</div>
+    <div class="options">
+      <div class="resume">
+        <a
+          href="https://drive.google.com/file/d/1Vmaha5bIGaY4iKOBngJsQwVjZZv7eCgK/view?usp=drive_link"
+          target="_blank"
+        >
+          <fa-icon [icon]="faFile"></fa-icon>
+        </a>
       </div>
-      <div
-        class="example-accordion-item-body"
-        role="region"
-        [style.display]="accordionItem.expanded ? '' : 'none'"
-        [attr.id]="'accordion-body-'"
-        [attr.aria-labelledby]="'accordion-header-'">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
-        excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
-        veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+      <div class="github">
+        <a href="https://github.com/PrathameshGujar08" target="_blank">
+          <fa-icon [icon]="faGithub"></fa-icon>
+        </a>
       </div>
-    </cdk-accordion-item>
-</cdk-accordion>
-
+      <div class="linkedIn">
+        <a href="https://www.linkedin.com/in/prathamesh-gujar/" target="_blank">
+          <fa-icon [icon]="faLinkedin"></fa-icon>
+        </a>
+      </div>
+      <div class="twitter">
+        <a href="https://twitter.com/Pratham85648392" target="_blank">
+          <fa-icon [icon]="faXTwitter"></fa-icon>
+        </a>
+      </div>
+      <div class="mail">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=prathameshgujar2002@gmail.com&bcc=prathameshgujar@iitbhilai.ac.in"
+          target="_blank"
+        >
+          <fa-icon [icon]="faEnvelope"></fa-icon>
+        </a>
+      </div>
+      <!-- <button (click)="toggleContactMe()">Hide Contact Me</button> -->
+    </div>
+  </div>
+</div>

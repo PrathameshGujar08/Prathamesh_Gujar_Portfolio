@@ -1,14 +1,29 @@
 import {Component} from '@angular/core';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { NgIf } from '@angular/common';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CdkAccordionModule],
+  imports: [CdkAccordionModule, FontAwesomeModule, NgIf],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 
 export class HeaderComponent {
-  name = "Prathamesh Gujar"
-  expandedIndex = 0;
+  showContactMe = false;
+
+  toggleContactMe() {
+    this.showContactMe = !this.showContactMe;
+  }
+
+  name = "Prathamesh Gujar";
+  oneLiner="I combine elegant front-end design with robust back-end functionality to create exceptional websites";
+  faGithub = faGithub;
+  faLinkedin = faLinkedin;
+  faEnvelope = faEnvelope;
+  faXTwitter = faXTwitter;
+  faFile = faFile;
 }
