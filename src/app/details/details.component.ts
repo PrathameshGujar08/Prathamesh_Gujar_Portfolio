@@ -20,8 +20,8 @@ import { faFile } from '@fortawesome/free-solid-svg-icons'
 export class DetailsComponent {
 
     public name: string = 'Prathamesh Gujar';
-    public designation: string = 'Full Stack Developer'
-    public tagLine: string = 'I combine elegant front-end design with robust back-end functionality to create exceptional websites.'
+    public designation: string = 'Software Engineer'
+    public tagLine: string = 'Solving problems, building solutions, no tech limits.';
    
     faGithub = faGithub;
     faLinkedin = faLinkedin;
