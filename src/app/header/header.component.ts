@@ -20,7 +20,7 @@ export class HeaderComponent {
   }
 
   name = "Prathamesh Gujar";
-  oneLiner="I combine elegant front-end design with robust back-end functionality to create exceptional websites";
+  oneLiner="Solving problems, building solutions, no tech limits.";
   faGithub = faGithub;
   faLinkedin = faLinkedin;
   faEnvelope = faEnvelope;
