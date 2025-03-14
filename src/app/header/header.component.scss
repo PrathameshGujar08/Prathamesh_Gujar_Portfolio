@@ -1,44 +1,55 @@
-:host{
+:host {
   display: none;
-  @media(max-width: 1180px) {
+  @media (max-width: 1180px) {
+    z-index: 5;
     display: block;
-    .nameBar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-    padding: 1.5rem;
-    background-color: black;
-    padding: 1rem;
-    .aboutMe{
-      padding: 0.5rem;
-      gap:2rem;
-      .name{
-        font-size: 2rem;
-        color: wheat;
+    .headerBar {
+      display: flex;
+      flex-direction: column;
+    }
+    .nameBar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: Roboto, "Helvetica Neue", sans-serif;
+      padding: 1.5rem;
+      background-color: black;
+      padding: 1rem;
+      .aboutMe {
+        padding: 0.5rem;
+        gap: 2rem;
+        .name {
+          font-size: 2rem;
+          color: wheat;
+        }
+        .oneLiner {
+          font-weight: lighter;
+        }
       }
+      .dropDownBtn {
+        img {
+          height: 1rem;
+          width: 1rem;
+        }
+      }
+    }
+    .contactMe {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       .oneLiner{
-        font-weight: lighter;
+        margin-left: 1.5rem;
       }
-    }
-    .dropDownBtn{
-      img{
-        height: 1rem;
-        width: 1rem;
-      }
-    }
-    .contactMe{
-      .options{
-
+      .options {
+        justify-content: space-evenly;
         display: flex;
         gap: 1rem;
         padding: 0.5rem;
-        fa-icon{
+        fa-icon {
           color: #aa9c9c;
           font-size: 2rem;
         }
       }
     }
   }
-}
 }

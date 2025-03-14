@@ -1,24 +1,26 @@
 <div class="headerBar">
+  
   <div class="nameBar">
-    <div class="aboutMe" *ngIf="!showContactMe">
+    <div class="aboutMe">
       <div class="name">{{ name }}</div>
     </div>
 
     <div class="dropDownBtn">
       <img
-        *ngIf="!showContactMe"
         (click)="toggleContactMe()"
         src="Icons/arrow.png"
         alt=""
+        [ngStyle]="{ 'transform': (showContactMe) ? 'rotate(180deg)' : 'rotate(0deg)' }"
       />
     </div>
+    
   </div>
   <div class="contactMe" *ngIf="showContactMe">
     <div class="oneLiner">{{ oneLiner }}</div>
     <div class="options">
       <div class="resume">
         <a
-          href="https://drive.google.com/file/d/1Vmaha5bIGaY4iKOBngJsQwVjZZv7eCgK/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1B0pePH4DY5NTAppEDTkUJgoXNHp95Sy9/view?usp=drive_link"
           target="_blank"
         >
           <fa-icon [icon]="faFile"></fa-icon>

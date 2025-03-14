@@ -3,11 +3,11 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { NgIf } from '@angular/common';
+import { NgClass, NgIf, NgStyle } from '@angular/common';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CdkAccordionModule, FontAwesomeModule, NgIf],
+  imports: [CdkAccordionModule, FontAwesomeModule, NgIf, NgStyle],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
